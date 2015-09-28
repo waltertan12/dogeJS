@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dogeJS</title>
+  <script src="./lib/block.js"></script>
+  <script src="./lib/doge.js"></script>
+  <script src="./lib/game.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+      var canvas = document.getElementById('canvas');
+      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth;
+      console.log(document.getElementById('canvas'));
+      new Blocks.Game(canvas.width, canvas.height).start(canvas);
+  </script>
+</body>
+</html>
